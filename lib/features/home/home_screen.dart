@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_braintree/flutter_braintree.dart';
-import 'package:hyperce/app_keys.dart';
+import 'package:hyperce/utils/app_keys.dart';
 import 'package:hyperce/braintree/braintree_helper.dart';
 import 'package:hyperce/common/payment_method_tile.dart';
-import 'package:hyperce/features/credit_card_details_screen.dart';
-import 'package:hyperce/features/native_details_screen.dart';
+import 'package:hyperce/features/credit_card_detail/credit_card_details_screen.dart';
+import 'package:hyperce/features/native_details/native_details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

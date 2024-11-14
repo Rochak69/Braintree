@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hyperce/features/home_screen.dart';
+import 'package:hyperce/features/home/home_screen.dart';
 
 void main() => runApp(
       const MaterialApp(
