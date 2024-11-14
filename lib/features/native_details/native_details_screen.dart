@@ -163,7 +163,7 @@ class _NativeDetailsScreenState extends State<NativeDetailsScreen> {
         cardEnabled: true,
       );
       final result = await BraintreeDropIn.start(request);
-      if (result != null) {
+      if (result != null && mounted) {
         BraintreeHelper.showNonce(result.paymentMethodNonce, context);
       }
     }

@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                   AppKeys.tokenizationKey,
                   request,
                 );
-                if (result != null) {
+                if (result != null && context.mounted) {
                   BraintreeHelper.showNonce(result, context);
                 }
               },
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                   AppKeys.tokenizationKey,
                   request,
                 );
-                if (result != null) {
+                if (result != null && context.mounted) {
                   BraintreeHelper.showNonce(result, context);
                 }
               },

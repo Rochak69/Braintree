@@ -106,7 +106,7 @@ class _CreditCardFormScreenState extends State<CreditCardFormScreen> {
         request,
       );
 
-      if (result != null) {
+      if (result != null && mounted) {
         BraintreeHelper.showNonce(result, context);
       }
     }
